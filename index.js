@@ -6,6 +6,7 @@ const userRouter= require('./routes/user_routes');
 const uploadRouter = require('./routes/uploads');
 const resturantRouter = require('./routes/resturants');
 const itemsRouter = require('./routes/items');
+const bannerRouter =require('./routes/bannerImages');
 const router = express.Router();
 
 const app = express();
@@ -27,6 +28,7 @@ app.use('/users',userRouter);
 app.use('/uploads',uploadRouter);
 app.use('/resturant',resturantRouter);
 app.use('/item',itemsRouter);
+app.use('/banner',bannerRouter);
 
         
 //servier hosting 
